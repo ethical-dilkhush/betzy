@@ -38,7 +38,7 @@ export function TopHeader() {
   }
 
   const handleContractCopy = () => {
-    const contractAddress = "coming" // Replace with actual contract address
+    const contractAddress = "0xBfA017c07f0A030c3b95a4588cFd61F15caD9b45" // Replace with actual contract address
     navigator.clipboard.writeText(contractAddress)
     toast({
       title: "Contract Address Copied",
@@ -229,7 +229,7 @@ export function TopHeader() {
                   <div className="space-y-2">
                     <label className="text-xs sm:text-sm font-medium text-gray-300">Betzy Contract Address</label>
                     <div className="p-2 sm:p-3 bg-slate-800/50 rounded-lg border border-cyan-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 overflow-hidden">
-                      <span className="font-mono text-xs sm:text-sm break-all word-break-all">coming</span>
+                      <span className="font-mono text-xs sm:text-sm break-all word-break-all">0xBfA017c07f0A030c3b95a4588cFd61F15caD9b45</span>
                       <Button
                         onClick={handleContractCopy}
                         size="sm"
